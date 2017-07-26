@@ -31,7 +31,7 @@ class CustomSetQuickSpec: QuickSpec {
                         _ = set!.insert("foo")
                     }
                     
-                    it("reurns the inserted element") {
+                    it("returns the inserted element") {
                         expect(set!.insert("foo")).to(equal("foo"))
                     }
                 }
@@ -39,7 +39,7 @@ class CustomSetQuickSpec: QuickSpec {
             
             describe("#remove") {
                 context("with a non-existing element") {
-                    it("returns nil") {
+                    it("returns nothing") {
                         expect(set!.remove("bar")).to(beNil())
                     }
                 }

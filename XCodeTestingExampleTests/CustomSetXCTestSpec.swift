@@ -27,7 +27,7 @@ class CustomSetXCTestSpec: XCTestCase {
         XCTAssertEqual(insertedValue, set!.insert("foo"))
     }
     
-    func testCustomSet_remove_returnsNilForNonExistingElement() {
+    func testCustomSet_remove_returnsNothingForNonExistingElement() {
         XCTAssertNil(set!.remove("bar"))
     }
     
